@@ -1,4 +1,4 @@
-name: \U0001F41B Bug Report
+name: :bug: Bug Report
 description: Report a bug
 labels: [bug, needs-triage]
 body:
