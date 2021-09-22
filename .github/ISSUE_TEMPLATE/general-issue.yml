@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        NOTE:📕 If there is an issue regarding developer guide, please create an issue [here](https://github.com/awsdocs/aws-cdk-guide/issues).
+        If there is an issue regarding developer guide, please create an issue [here](https://github.com/awsdocs/aws-cdk-guide/issues).
 
   - type: input
     id: issue
@@ -32,7 +32,7 @@ body:
       label: CDK CLI Version
       description: Output of `cdk version`
     validations:
-      required: false
+      required: true
 
   - type: input
     id: framework-version
@@ -61,19 +61,19 @@ body:
       label: Language
       multiple: true
       options:
-        - Python
         - Typescript
+        - Python
         - .NET
         - Java
         - Go
     validations:
-      required: false
+      required: true
 
   - type: input
     id: language-version
     attributes:
       label: Language Version
-      description: E.g. TypeScript (3.8.3) | Java (8)| Python (3.7.3)
+      description: E.g. TypeScript (3.8.3) | Java (8) | Python (3.7.3)
     validations:
       required: false
 

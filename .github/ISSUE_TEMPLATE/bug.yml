@@ -46,7 +46,7 @@ body:
       label: CDK CLI Version
       description: Output of `cdk version`
     validations:
-      required: false
+      required: true
 
   - type: input
     id: framework-version
@@ -60,14 +60,14 @@ body:
     attributes:
       label: Node.js Version
     validations:
-      required: false
+      required: true
 
   - type: input
     id: operating-system
     attributes:
       label: OS
     validations:
-      required: false
+      required: true
 
   - type: dropdown
     id: language
@@ -75,19 +75,19 @@ body:
       label: Language
       multiple: true
       options:
-        - Python
         - Typescript
+        - Python
         - .NET
         - Java
         - Go
     validations:
-      required: false
+      required: true
 
   - type: input
     id: language-version
     attributes:
       label: Language Version
-      description: E.g. TypeScript (3.8.3) | Java (8)| Python (3.7.3)
+      description: E.g. TypeScript (3.8.3) | Java (8) | Python (3.7.3)
     validations:
       required: false
 
