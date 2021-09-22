@@ -1,42 +1,28 @@
-name: Bug Report
-description: Report a bug
+name: General Issue
+description: Create a new issue
 title: "(module name): short issue description"
-labels: [bug, needs-triage]
+labels: [needs-triage, guidance]
 body:
-  - type: textarea
-    id: problem
+  - type: markdown
     attributes:
-      label: What is the problem?
+      value: |
+        NOTE:📕 If there is an issue regarding developer guide, please create an issue [here](https://github.com/awsdocs/aws-cdk-guide/issues).
+
+  - type: input
+    id: issue
+    attributes:
+      label: General Issue
+      description: |
+        For support questions, please first reference our [documentation](https://docs.aws.amazon.com/cdk/api/latest), then use [Stackoverflow](https://stackoverflow.com/questions/tagged/aws-cdk). This repository's issues are intended for feature requests and bug reports.
     validations:
       required: true
 
   - type: textarea
-    id: reproduction
+    id: question
     attributes:
-      label: Reproduction Steps
+      label: The Question
       description: |
-        Minimal amount of code that causes the bug (if possible) or a reference.
-
-        The code sample should be an SSCCE. See http://sscce.org/ for details.
-        In short, provide a code sample that we can copy/paste, run and reproduce.
-    validations:
-      required: true
-
-  - type: textarea
-    id: expected
-    attributes:
-      label: What did you expect to happen?
-      description: |
-        What were you trying to achieve by performing the steps above?
-    validations:
-      required: true
-
-  - type: textarea
-    id: actual
-    attributes:
-      label: What actually happened?
-      description: |
-        What is the unexpected behavior you were seeing? If you got an error, paste it here.
+        Ask your question here. Include any details relevant. Make sure you are not falling prey to the [X/Y problem](http://xyproblem.info)!
     validations:
       required: true
 
@@ -99,10 +85,3 @@ body:
         e.g. detailed explanation, stacktraces, related issues, suggestions how to fix, links for us to have context, eg. associated pull-request, stackoverflow, slack, etc
     validations:
       required: false
-
-  - type: markdown
-    attributes:
-      value: |
-        ---
-
-        This is :bug: Bug Report
